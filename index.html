@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Memory Borodianka — Shevchenko Monument</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="page">
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="nav-left">
+      <div class="nav-logo"></div>
+      <div class="nav-brand">
+        <span class="nav-brand-main" data-i18n="nav-brand-main">Memory Borodianka</span>
+        <span class="nav-brand-sub" data-i18n="nav-brand-sub">Історія пам’ятника Шевченку</span>
+      </div>
+    </div>
+
+    <nav class="nav-center">
+      <a href="#about" class="nav-link" data-i18n="nav-link-about">Про пам’ятник</a>
+      <a href="#timeline" class="nav-link" data-i18n="nav-link-timeline">Хронологія</a>
+      <a href="#before-after" class="nav-link" data-i18n="nav-link-beforeafter">До / Після</a>
+      <a href="#gallery" class="nav-link" data-i18n="nav-link-gallery">Галерея</a>
+      <a href="#memory" class="nav-link" data-i18n="nav-link-memory">Пам’ять</a>
+    </nav>
+
+    <div class="nav-right">
+      <button class="nav-cta" data-i18n="nav-cta">Дивитися свідчення</button>
+
+      <div class="lang-toggle" aria-label="Language toggle">
+        <button class="lang-btn active" data-lang="ua">UA</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="section hero">
+      <div class="hero-bg-orbit"></div>
+      <div class="hero-content">
+        <div class="hero-left reveal">
+          <div class="hero-kicker" data-i18n="hero-kicker">
+            Бородянка · 2022 · пам’ять про незламність
+          </div>
+
+          <h1 class="hero-title">
+            <span data-i18n="hero-title-line1">Пам’ятник Шевченку,</span><br />
+            <span class="accent" data-i18n="hero-title-line2">який не зміг зламати обстріл.</span>
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="hero-subtitle">
+            У Бородянці погруддя Тараса Шевченка було розстріляне під час російських атак, але вціліле обличчя поета
+            стало символом незламності. Цей сайт — цифровий простір пам’яті про удар по культурі, який не став перемогою ворога.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn primary" onclick="document.querySelector('#before-after').scrollIntoView({behavior:'smooth'})" data-i18n="hero-cta-primary">
+              Побачити руйнування
+            </button>
+            <button class="btn ghost" onclick="document.querySelector('#timeline').scrollIntoView({behavior:'smooth'})" data-i18n="hero-cta-secondary">
+              Дізнатись контекст
+            </button>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <span class="dot"></span>
+              <span data-i18n="hero-meta-1">Реальні фото до та після обстрілів.</span>
+            </div>
+            <div class="meta-item">
+              <span class="dot"></span>
+              <span data-i18n="hero-meta-2">Сайт можна використати як основу онлайн-музею.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right reveal">
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <span class="hero-card-label" data-i18n="hero-card-label">Війна проти культури</span>
+              <span class="hero-card-time" data-i18n="hero-card-time">Березень 2022</span>
+            </div>
+
+            <div class="hero-card-body">
+              <div class="hero-thumb hero-thumb-before">
+                <!-- ЗАМІНИ ШЛЯХИ НА СВОЇ ФОТО -->
+                <img src="images/before-portrait.jpg" alt="Пам’ятник Шевченку до руйнування" />
+                <span class="hero-thumb-label" data-i18n="hero-thumb-before-label">До вторгнення</span>
+              </div>
+              <div class="hero-thumb hero-thumb-after">
+                <img src="images/after-portrait.jpg" alt="Пам’ятник Шевченку після руйнування" />
+                <span class="hero-thumb-label" data-i18n="hero-thumb-after-label">Після обстрілу</span>
+              </div>
+            </div>
+
+            <div class="hero-progress">
+              <div class="hero-progress-text">
+                <span data-i18n="hero-progress-title">Документування руйнувань</span>
+                <span class="muted" data-i18n="hero-progress-subtitle">цифрова реставрація памʼяті</span>
+              </div>
+              <div class="hero-progress-bar">
+                <div class="hero-progress-fill"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-header reveal">
+        <p class="section-kicker" data-i18n="about-kicker">про пам’ятник</p>
+        <h2 class="section-title" data-i18n="about-title">
+          Один монумент — тисячі прочитань війни.
+        </h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text card reveal">
+          <p data-i18n="about-text-1">
+            До повномасштабного вторгнення пам’ятник Тарасу Шевченку в Бородянці був звичайною точкою на мапі містечка:
+            місце зустрічей, святкових подій, спільних фотографій.
+          </p>
+          <p data-i18n="about-text-2">
+            У березні 2022 року російські війська обстрілюють Бородянку. Погруддя Шевченка розстрілюють, але обличчя
+            поета дивом лишається неушкодженим. Цей образ стає одним із символів незламності України.
+          </p>
+          <p data-i18n="about-text-3">
+            Цей сайт не є офіційним музейним ресурсом. Це навчальний digital-проєкт, який можна доповнювати: додавати
+            більше фото, відео, свідчень, посилань на джерела.
+          </p>
+        </div>
+
+        <div class="about-list card reveal">
+          <ul>
+            <li data-i18n="about-list-1">
+              Використовуй як основу для шкільного чи студентського проєкту.
+            </li>
+            <li data-i18n="about-list-2">
+              Інтегруй у локальну виставку: додай QR-код, що веде на цей сайт.
+            </li>
+            <li data-i18n="about-list-3">
+              Розширюй: додавай розділи про інші зруйновані об’єкти Бородянки.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline" class="section section-alt">
+      <div class="section-header reveal">
+        <p class="section-kicker" data-i18n="timeline-kicker">хронологія</p>
+        <h2 class="section-title" data-i18n="timeline-title">Як один постамент став символом опору.</h2>
+      </div>
+
+      <div class="timeline-grid">
+        <div class="timeline card reveal">
+          <div class="timeline-item">
+            <div class="timeline-label" data-i18n="timeline-item-1-label">до вторгнення</div>
+            <p data-i18n="timeline-item-1-text">
+              Пам’ятник сприймається як звичайний елемент простору: поруч проходять, не завжди помічаючи, але він тихо
+              нагадує про поета, який писав про волю й гідність.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-label" data-i18n="timeline-item-2-label">березень 2022</div>
+            <p data-i18n="timeline-item-2-text">
+              Під час російської окупації Бородянки пам’ятник розстрілюють. Пошкоджений постамент, уламки, але обличчя
+              Шевченка залишається цілим — як немий докір загарбникам.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-label" data-i18n="timeline-item-3-label">після деокупації</div>
+            <p data-i18n="timeline-item-3-text">
+              Фото зруйнованого пам’ятника розлітаються світом. Журналісти, волонтери, дослідники війни використовують
+              цей образ, щоб показати: агресія спрямована проти самої ідентичності.
+            </p>
+          </div>
+
+          <p class="timeline-note muted" data-i18n="timeline-note">
+            Для точних дат, посилань на джерела та документів цей макет можна доповнити архівними матеріалами,
+            репортажами та офіційними звітами.
+          </p>
+        </div>
+
+        <div class="quote card reveal">
+          <p class="quote-text" data-i18n="memory-quote">
+            «Борітеся — поборете, вам Бог помагає! За вас правда, за вас слава і воля святая!»
+          </p>
+          <p class="quote-author" data-i18n="memory-quote-author">Тарас Шевченко</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEFORE / AFTER -->
+    <section id="before-after" class="section">
+      <div class="section-header reveal">
+        <p class="section-kicker" data-i18n="ba-kicker">візуальне свідчення</p>
+        <h2 class="section-title" data-i18n="ba-title">До і після обстрілу.</h2>
+        <p class="section-subtitle" data-i18n="ba-subtitle">
+          Перетягни повзунок, щоб побачити, як змінюється простір. Ліворуч — те, що було. Праворуч — те, що залишила по собі війна.
+        </p>
+      </div>
+
+      <div class="ba-layout">
+        <div class="ba-shell card reveal">
+          <div class="ba-view">
+            <!-- ЗАМІНИ НА СВОЇ ФОТО -->
+            <img src="images/before-wide.jpg" class="ba-img ba-img-before" alt="До руйнування" />
+            <img src="images/after-wide.jpg" class="ba-img ba-img-after" alt="Після руйнування" />
+            <div class="ba-label ba-label-left" data-i18n="ba-label-before">До</div>
+            <div class="ba-label ba-label-right" data-i18n="ba-label-after">Після</div>
+            <div class="ba-handle">
+              <div class="ba-knob">↔</div>
+            </div>
+          </div>
+
+          <input id="baSlider" type="range" min="0" max="100" value="50" />
+        </div>
+
+        <div class="ba-text card reveal">
+          <p data-i18n="ba-text-1">
+            Руйнування пам’ятників — це не випадковість. Це цілеспрямована спроба стерти символи,
+            які тримають націю разом.
+          </p>
+          <p data-i18n="ba-text-2">
+            Саме тому збереження навіть цифрового образу зруйнованого монумента важливе: він фіксує момент
+            історії й дозволяє говорити про злочини проти культури.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section section-alt">
+      <div class="section-header reveal">
+        <p class="section-kicker" data-i18n="gallery-kicker">фотогалерея</p>
+        <h2 class="section-title" data-i18n="gallery-title">Кадри, що говорять без слів.</h2>
+        <p class="section-subtitle" data-i18n="gallery-subtitle">
+          Натисни на фото, щоб відкрити його у повноекранному режимі. Сюди можна додати світлини місцевих мешканців, журналістів, волонтерів.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- ЗАМІНИ src та data-full на свої файли -->
+        <figure class="gallery-item reveal"
+                data-full="images/gallery-1-large.jpg"
+                data-caption-ua="Погруддя Шевченка після обстрілів"
+                data-caption-en="Shevchenko bust after shelling">
+          <img src="images/gallery-1-thumb.jpg" alt="Погруддя Шевченка" />
+          <figcaption>
+            <span class="badge" data-i18n="gallery-badge-1">символ</span>
+            <span data-i18n="gallery-caption-1">Погляд крізь уламки.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal"
+                data-full="images/gallery-2-large.jpg"
+                data-caption-ua="Площа навколо пам’ятника"
+                data-caption-en="Square around the monument">
+          <img src="images/gallery-2-thumb.jpg" alt="Площа навколо пам’ятника" />
+          <figcaption>
+            <span class="badge" data-i18n="gallery-badge-2">простір</span>
+            <span data-i18n="gallery-caption-2">Зміна міського ландшафту.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal"
+                data-full="images/gallery-3-large.jpg"
+                data-caption-ua="Сліди снарядів на постаменті"
+                data-caption-en="Shell traces on the pedestal">
+          <img src="images/gallery-3-thumb.jpg" alt="Сліди снарядів" />
+          <figcaption>
+            <span class="badge" data-i18n="gallery-badge-3">деталі</span>
+            <span data-i18n="gallery-caption-3">Сліди війни зблизька.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal"
+                data-full="images/gallery-4-large.jpg"
+                data-caption-ua="Люди поруч із пам’ятником"
+                data-caption-en="People near the monument">
+          <img src="images/gallery-4-thumb.jpg" alt="Люди біля пам’ятника" />
+          <figcaption>
+            <span class="badge" data-i18n="gallery-badge-4">люди</span>
+            <span data-i18n="gallery-caption-4">Особисті історії поруч.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- MEMORY / CALL TO ACTION -->
+    <section id="memory" class="section">
+      <div class="memory card reveal">
+        <p class="section-kicker" data-i18n="memory-kicker">пам’ять і відповідальність</p>
+        <h2 class="section-title" data-i18n="memory-title">
+          Digital-памʼятник, який можна нести далі.
+        </h2>
+        <p data-i18n="memory-text">
+          Цей макет можна перетворити на повноцінний онлайн-музей: додати інтерактивну карту, розділи про інші зруйновані об’єкти,
+          інтерв’ю з мешканцями, архівні документи. Важливо, щоб історія Бородянки звучала не лише в новинах, а й у
+          довготривалій культурній пам’яті.
+        </p>
+        <button class="btn primary" data-i18n="memory-cta">
+          Додати свої історії та фото
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close">✕</button>
+      <img id="lightbox-img" src="" alt="Gallery image" />
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+      <p class="lightbox-hint" data-i18n="lightbox-hint">
+        Натисни поза вікном або клавішу Esc, щоб закрити.
+      </p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span data-i18n="footer-left">
+      Цей сайт можна розгорнути як онлайн-музей зруйнованих культурних об’єктів Бородянки.
+    </span>
+    <span data-i18n="footer-right">
+      Створено як digital-проєкт пам’яті про Тараса Шевченка та людей, які берегли його слово.
+    </span>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<img
